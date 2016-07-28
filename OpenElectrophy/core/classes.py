@@ -91,7 +91,7 @@ if  '0.4'>version.LooseVersion(neo.__version__)>='0.3':
                                 )
         oeclasses.append(type(name, (OEBase,), classattr))
     
-elif version.LooseVersion(neo.__version__)=='0.4.0dev':
+else:
     print 'OE3 with neo0.4 : Experimentale!!!'
     oeclasses = [ ]
     for neoname, neoclass in neo.class_by_name.items():
